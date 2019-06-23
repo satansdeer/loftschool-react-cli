@@ -1,10 +1,29 @@
 {
   "name": "loftschool-react-cli",
   "version": "1.0.0",
-  "description": "## Installation",
+  "description": "Курс по ReactJS от Loftschool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "import-jsx": "^2.0.0",
+    "ink": "^2.1.1",
+    "ink-big-text": "^1.0.1",
+    "ink-box": "^1.0.0",
+    "ink-divider": "^2.0.0",
+    "ink-gradient": "^1.0.0",
+    "ink-link": "^1.0.0",
+    "ink-select-input": "^3.1.1",
+    "meow": "^5.0.0",
+    "open": "^6.3.0",
+    "react": "^16.8.6",
+    "shelljs": "^0.8.3",
+    "term-img": "^4.1.0",
+    "terminal-image": "^0.2.0"
+  },
+  "bin": {
+    "react-course": "./scripts/greet.js"
   },
   "keywords": [],
   "author": "",

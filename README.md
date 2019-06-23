@@ -1,5 +1,7 @@
 # Loftschool React CLI
 
+## Some Other Line
+
 ## Installation 
 
 Install `loftschool-react-cli` globally.
