@@ -1,6 +1,6 @@
 {
   "name": "loftschool-react-cli",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Курс по ReactJS от Loftschool",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "ink-link": "^1.0.0",
     "ink-select-input": "^3.1.1",
     "meow": "^5.0.0",
+    "node-svn-ultimate": "^1.2.0",
     "open": "^6.3.0",
     "react": "^16.8.6",
     "shelljs": "^0.8.3",

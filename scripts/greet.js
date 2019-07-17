@@ -5,6 +5,7 @@ const React = require("react");
 const { render } = require("ink");
 const meow = require("meow");
 const shell = require("shelljs");
+const svn = require('node-svn-ultimate');
 
 const repoUrl = "https://github.com/satansdeer/loftschool-homeworks/branches/"
 
@@ -36,7 +37,9 @@ const cli = meow(
 );
 
 if (cli.flags.homework) {
-  shell.exec(`svn export ${repoUrl}${cli.flags.homework} -q && cd ${cli.flags.homework} && cat README.md`)
+  svn.commands.export(`${repoUrl}${cli.flags.homework}`, `./${cli.flags.homework}`, {quiet: true, force: true}, () => {
+    shell.exec(`cd ${cli.flags.homework} && cat README.md`)
+  })
 } else {
   render(React.createElement(ui));
 }
