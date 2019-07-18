@@ -5,9 +5,8 @@ const React = require("react");
 const { render } = require("ink");
 const meow = require("meow");
 const shell = require("shelljs");
-const svn = require('node-svn-ultimate');
 
-const repoUrl = "https://github.com/satansdeer/loftschool-homeworks/branches/"
+const repoUrl = "github.com:satansdeer/loftschool-homeworks";
 
 const ui = importJsx("./ui");
 
@@ -37,9 +36,12 @@ const cli = meow(
 );
 
 if (cli.flags.homework) {
-  svn.commands.export(`${repoUrl}${cli.flags.homework}`, `./${cli.flags.homework}`, {quiet: true, force: true}, () => {
-    shell.exec(`cd ${cli.flags.homework} && cat README.md`)
-  })
+  shell.exec(`git clone ${repoUrl} ${cli.flags.homework} --branch ${
+    cli.flags.homework
+  } --quiet --depth 1 && cd ${
+    cli.flags.homework
+  } && rm -rf .git && git init --quiet && git add . &&
+  git commit -m "🐣 Initial commit" --quiet && cat README.md`);
 } else {
   render(React.createElement(ui));
 }
