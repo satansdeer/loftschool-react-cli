@@ -6,7 +6,7 @@ const { render } = require("ink");
 const meow = require("meow");
 const shell = require("shelljs");
 
-const repoUrl = "github.com:satansdeer/loftschool-homeworks";
+const repoUrl = "git@github.com:satansdeer/loftschool-homeworks.git";
 
 const ui = importJsx("./ui");
 
