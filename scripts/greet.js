@@ -10,11 +10,6 @@ const repoUrl = "github.com:satansdeer/loftschool-homeworks";
 
 const ui = importJsx("./ui");
 
-if (!shell.which("svn")) {
-  shell.echo("Sorry, this script requires svn");
-  shell.exit(1);
-}
-
 const cli = meow(
   `
 	Usage
