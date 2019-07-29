@@ -44,7 +44,7 @@ if (cli.flags.homework) {
     console.log(execSync(cloneCommand).toString());
   } catch (e) {
     console.log(
-      `Что-то пошло не так.\n\nПопробуйте выполнить команду вручную: \n\n${command1} && git commit -m "Initial commit"\n\nПосле того как она выполнится - создайте новый репозиторий:\n\n hub create`
+      `Что-то пошло не так.\n\nПопробуйте выполнить команду вручную: \n\n${cloneCommand} && git commit -m "Initial commit"\n\nПосле того как она выполнится - создайте новый репозиторий:\n\n hub create`
     );
     return;
   }
