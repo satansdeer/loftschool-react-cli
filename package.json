@@ -1,6 +1,6 @@
 {
   "name": "loftschool-react-cli",
-  "version": "6.3.0",
+  "version": "6.4.0",
   "description": "Курс по ReactJS от Loftschool",
   "main": "index.js",
   "scripts": {
