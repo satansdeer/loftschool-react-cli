@@ -9,7 +9,7 @@
   "dependencies": {
     "import-jsx": "^2.0.0",
     "ink": "^2.1.1",
-    "ink-big-text": "^1.0.1",
+    "ink-big-text": "^1.2.0",
     "ink-box": "^1.0.0",
     "ink-divider": "^2.0.0",
     "ink-gradient": "^1.0.0",
