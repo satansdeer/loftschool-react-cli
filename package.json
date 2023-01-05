@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "import-jsx": "^2.0.0",
+    "import-jsx": "^4.0.1",
     "ink": "^2.1.1",
     "ink-big-text": "^1.0.1",
     "ink-box": "^1.0.0",
